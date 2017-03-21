@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<script>
+<!--  
+  <interaction name="InteractionRoot.C2WInteractionRoot.ExperimentInit" startTime="1243947600" ignoreTil="4" Param3="6">
+    <injection_time value="2"/>
+  </interaction>
+  <expect federateType="WeatherFederate"/>
+  <expect federateType="WeatherToGridlabDFederate"/>
+  <expect federateType="GridlabDFederate"/>
+  <expect federateType="GridlabDToModelHouseFederate"/>
+  <expect federateType="NGSIGateway"/>
+  <expect federateType="ModelHouseBBB"/>
+-->
+</script>

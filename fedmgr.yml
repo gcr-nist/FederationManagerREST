@@ -1,0 +1,43 @@
+logging:
+  level: ERROR
+  loggers:
+    gov.nist.hla: TRACE
+    io.dropwizard: ERROR
+    timeZone: UTC
+federation: 
+  federation_name: FederationManager
+  FOM_file_name: federation.fed
+  script_file_name: script.xml
+  _dbName: mysql
+  _logLevel: 1
+  mode: false
+  step: 2
+  lookahead: 2
+  _terminateOnCOAFinish: true
+  _federationEndTime: 2
+  seed4Dur: 2
+  autoStart: true
+  gui: false
+server:
+  adminMinThreads: 1
+  adminMaxThreads: 64
+  adminContextPath: /admin
+  applicationContextPath: /*
+  applicationConnectors:
+    - type: http
+      port: 8080
+    - type: https
+      port: 8443
+      keyStorePath: example.keystore
+      keyStorePassword: example
+      validateCerts: false
+      validatePeers: false
+  adminConnectors:
+    - type: http
+      port: 8081
+    - type: https
+      port: 8444
+      keyStorePath: example.keystore
+      keyStorePassword: example
+      validateCerts: false
+      validatePeers: false
